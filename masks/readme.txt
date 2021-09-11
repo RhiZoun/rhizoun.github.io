@@ -1,0 +1,2 @@
+Well done you found github and clicked on things. 
+If we work out what ways we actually want to use github to do shit instead of just sending me personally stuff we'll put a summary here for easy reference.
