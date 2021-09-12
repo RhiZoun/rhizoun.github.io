@@ -143,6 +143,10 @@ Error message and password prompt
 
 <li>$:/build</li>
 
+<li>$:/config/DefaultMoreSidebarTab</li>
+
+<li>$:/config/DefaultSidebarTab</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
@@ -176,6 +180,8 @@ Error message and password prompt
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/tab--1498284803</li>
+
+<li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab-627419644</li>
 
@@ -298,6 +304,12 @@ Error message and password prompt
 <div commit="e795b501ac569f3f499a4dc96fb1b3e18fb6f39e" title="$:/build">
 <pre>Built from branch 'tiddlywiki-com' at commit e795b501ac569f3f499a4dc96fb1b3e18fb6f39e of https://github.com/Jermolene/TiddlyWiki5 at 2021-08-31 08:20:43 UTC
 </pre>
+</div>
+<div created="20210912205753200" modified="20210912205753200" title="$:/config/DefaultMoreSidebarTab">
+<pre>$:/core/ui/MoreSideBar/Missing</pre>
+</div>
+<div created="20210912205756998" modified="20210912205756998" title="$:/config/DefaultSidebarTab">
+<pre>TableOfContents</pre>
 </div>
 <div created="20210910214710181" modified="20210910214710181" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
@@ -10273,10 +10285,10 @@ Error message and password prompt
 <div created="20210911142759563" modified="20210911142759563" title="$:/state/advancedsearch/currentTab">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20210911142624341" modified="20210912120247139" title="$:/state/notebook-sidebar">
-<pre>yes</pre>
+<div created="20210911142624341" modified="20210912210918855" title="$:/state/notebook-sidebar">
+<pre>no</pre>
 </div>
-<div created="20210911142628250" modified="20210912130229843" title="$:/state/notebook-sidebar-section">
+<div created="20210911142628250" modified="20210912210736399" title="$:/state/notebook-sidebar-section">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20210911230855267" modified="20210912115039512" title="$:/state/showeditpreview">
@@ -10284,6 +10296,9 @@ Error message and password prompt
 </div>
 <div created="20210911142759563" modified="20210911142759563" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
+</div>
+<div created="20210912205722842" modified="20210912205722842" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20210912114244797" modified="20210912114252889" title="$:/state/tab-627419644">
 <pre>$:/core/ui/TiddlerInfo/Advanced</pre>
@@ -10300,7 +10315,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210912130211452" list="PCTemplate [[Killer Byte]]" modified="20210912130234175" title="$:/StoryList">
+<div created="20210912205719920" list="PCTemplate" modified="20210912210918856" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190419181423958" modified="20210910214436809" title="$:/theme">
@@ -10760,10 +10775,12 @@ For nesting you need the content to be another tiddler
 
 &lt;/$details&gt;</pre>
 </div>
-<div created="20210910212100945" modified="20210912123953757" tags="" title="Home">
+<div created="20210910212100945" modified="20210912210823112" tags="" title="Home">
 <pre>Most recent session notes:
 &lt;$list filter=&quot;[tag[Sessions]] +[last[]]&quot;&gt;
-&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;/&gt;
+&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;&lt;currentTiddler&gt;&gt;: 
+&lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt; field=cap/&gt;
+&lt;/$link&gt;
 &lt;/$list&gt;
 
 
@@ -11519,7 +11536,7 @@ and
 <div created="20210911181003706" modified="20210911181150846" tags="TableOfContents" title="PCs">
 <pre>&lt;&lt;list-links &quot;[tag[PCs]]&quot;&gt;&gt;</pre>
 </div>
-<div aka="other, names, listed, here" created="20210911133002319" list="" modified="20210912131229455" player="Name" pronouns="(pronouns)" tags="templates" title="PCTemplate">
+<div aka="other, names, listed, here" created="20210911133002319" list="" modified="20210912211624632" player="Name" pronouns="(pronouns)" tags="templates" title="PCTemplate">
 <pre>//AKA: {{!!aka}}//
 
 {{!!pronouns}}
@@ -11528,13 +11545,27 @@ and
 
 &lt;$details summary=&quot;Featured In&quot;&gt;
 
-&lt;&lt;list-links &quot;[tag[Sessions]] +[contains:pclist{!!title}]&quot;&gt;&gt;
+&lt;ul&gt;
+&lt;$list filter=&quot;[tag[Sessions]] +[contains:pclist{!!title}]&quot;&gt;
+&lt;li&gt;
+&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;&lt;currentTiddler&gt;&gt;: 
+&lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt; field=cap/&gt;
+&lt;/$link&gt; &lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
 
 &lt;/$details&gt;
 
 &lt;$details summary=&quot;Mentioned In&quot;&gt;
 
-&lt;&lt;list-links &quot;[tag[Sessions]] :intersection[{!!title}backlinks[]] -[contains:pclist{!!title}]&quot;&gt;&gt;
+&lt;ul&gt;
+&lt;$list filter=&quot;[tag[Sessions]] :intersection[{!!title}backlinks[]] -[contains:pclist{!!title}]&quot;&gt;
+&lt;li&gt;
+&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;&lt;currentTiddler&gt;&gt;: 
+&lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt; field=cap/&gt;
+&lt;/$link&gt; &lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
 
 &lt;/$details&gt;
 </pre>
@@ -11542,7 +11573,7 @@ and
 <div aka="Xander Nakamura" created="20210912123505904" modified="20210912123621263" player="Elsie" pronouns="he/him" tags="unfinished PCs" title="Peregrine">
 <pre>{{||PCTemplate}}</pre>
 </div>
-<div created="20210910212306143" modified="20210911181234131" tags="TableOfContents" title="Sessions">
+<div created="20210910212306143" list="Issue 0" modified="20210912205844585" tags="TableOfContents" title="Sessions">
 <pre>&lt;&lt;list-links &quot;[tag[Sessions]]&quot;&gt;&gt;</pre>
 </div>
 <div caption="Table Of Contents" created="20190331133032530" list-before="$:/core/ui/SideBar/Open" modified="20210910215240036" tags="$:/tags/SideBar" title="TableOfContents">
