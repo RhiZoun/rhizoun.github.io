@@ -145,6 +145,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh</li>
 
 <li>$:/config/RelinkOnRename</li>
@@ -171,7 +173,13 @@ Error message and password prompt
 
 <li>$:/state/notebook-sidebar-section</li>
 
+<li>$:/state/showeditpreview</li>
+
 <li>$:/state/tab--1498284803</li>
+
+<li>$:/state/tab-627419644</li>
+
+<li>$:/state/tab/moresidebar-1850697562</li>
 
 <li>$:/state/toc/TableOfContents-PCs-1871113288</li>
 
@@ -203,7 +211,37 @@ Error message and password prompt
 
 <li>Issue 1</li>
 
+<li>Issue 10</li>
+
+<li>Issue 11</li>
+
+<li>Issue 12</li>
+
+<li>Issue 13</li>
+
+<li>Issue 14</li>
+
+<li>Issue 15</li>
+
+<li>Issue 16</li>
+
+<li>Issue 17</li>
+
+<li>Issue 18</li>
+
+<li>Issue 19</li>
+
 <li>Issue 2</li>
+
+<li>Issue 20</li>
+
+<li>Issue 21</li>
+
+<li>Issue 22</li>
+
+<li>Issue 23</li>
+
+<li>Issue 24</li>
 
 <li>Issue 3</li>
 
@@ -213,31 +251,35 @@ Error message and password prompt
 
 <li>Issue 6</li>
 
+<li>Issue 7</li>
+
+<li>Issue 8</li>
+
+<li>Issue 9</li>
+
 <li>IssueTemplate</li>
 
-<li>PCKB</li>
+<li>Killer Byte</li>
 
-<li>PCLark</li>
+<li>Lark</li>
 
-<li>PCMill</li>
+<li>Millennium</li>
 
 <li>PCs</li>
 
-<li>PCStone</li>
-
 <li>PCTemplate</li>
 
-<li>PCTourm</li>
+<li>Peregrine</li>
 
 <li>Sessions</li>
 
 <li>TableOfContents</li>
 
-<li>Test</li>
+<li>The Scalding Stone</li>
 
 <li>Tourmaline</li>
 
-<li>Untitled</li>
+<li>unfinished</li>
 
 </ul>
 </p>
@@ -258,6 +300,9 @@ Error message and password prompt
 </pre>
 </div>
 <div created="20210910214710181" modified="20210910214710181" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
+<pre>show</pre>
+</div>
+<div created="20210912104415492" modified="20210912104415492" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
 <pre>show</pre>
 </div>
 <div created="20210910214726779" modified="20210910214731182" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
@@ -10228,14 +10273,23 @@ Error message and password prompt
 <div created="20210911142759563" modified="20210911142759563" title="$:/state/advancedsearch/currentTab">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20210911142624341" modified="20210911142624341" title="$:/state/notebook-sidebar">
+<div created="20210911142624341" modified="20210912120247139" title="$:/state/notebook-sidebar">
 <pre>yes</pre>
 </div>
-<div created="20210911142628250" modified="20210911213214794" title="$:/state/notebook-sidebar-section">
-<pre></pre>
+<div created="20210911142628250" modified="20210912123959752" title="$:/state/notebook-sidebar-section">
+<pre>$:/core/ui/SideBar/More</pre>
+</div>
+<div created="20210911230855267" modified="20210912115039512" title="$:/state/showeditpreview">
+<pre>no</pre>
 </div>
 <div created="20210911142759563" modified="20210911142759563" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
+</div>
+<div created="20210912114244797" modified="20210912114252889" title="$:/state/tab-627419644">
+<pre>$:/core/ui/TiddlerInfo/Advanced</pre>
+</div>
+<div created="20210912114342755" modified="20210912121939384" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
 <div created="20210911181746409" modified="20210911183102942" title="$:/state/toc/TableOfContents-PCs-1871113288">
 <pre>open</pre>
@@ -10246,7 +10300,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="Home" title="$:/StoryList">
+<div created="20210912124002235" list="unfinished Home" modified="20210912124006813" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190419181423958" modified="20210910214436809" title="$:/theme">
@@ -10683,10 +10737,10 @@ Error message and password prompt
 <div created="20210910213310065" modified="20210910213315619" title="$:/view">
 <pre>classic</pre>
 </div>
-<div aka="fake name, faker name" created="20210911180553051" modified="20210911192355065" player="Human" tag-name="PCAbbrv" tags="PCs" title="Example PC">
+<div aka="fake name, faker name" created="20210911180553051" modified="20210912122937634" player="Human" pronouns="pronouns" tags="PCs" title="Example PC">
 <pre>{{||PCTemplate}}
 
-Brief description. Everything above this point will be laid out via fields and templates.
+Everything above this point will be laid out via fields and templates which makes it easily changeable for all PCs if someone were to suggest alternate layout.
 
 More content blah blah</pre>
 </div>
@@ -10706,21 +10760,35 @@ For nesting you need the content to be another tiddler
 
 &lt;/$details&gt;</pre>
 </div>
-<div created="20210910212100945" modified="20210911213254335" tags="unfinished" title="Home">
-<pre>For those in search of a to do list, click More in the sidebar and check out the Missing tab for a list of referenced pages that don't exist, (or find the same list [[here|$:/core/ui/SideBar/More]]).
+<div created="20210910212100945" modified="20210912123953757" tags="" title="Home">
+<pre>Most recent session notes:
+&lt;$list filter=&quot;[tag[Sessions]] +[last[]]&quot;&gt;
+&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;/&gt;
+&lt;/$list&gt;
+
+
+Check out the Missing tab for a list of referenced pages that don't exist, (or find the same list [[here|$:/core/ui/SideBar/More]]).
 
 This is the github repository: https://github.com/RhiZoun/rhizoun.github.io
 You may notice there's shit other than masks there, ignore all that everything relevant will be stored in [[here|https://github.com/RhiZoun/rhizoun.github.io/tree/main/masks]]. As of 11/09/21 that's just the tiddlywiki itself (main.html) but at some point I'll work out shit like storing images in separate files to use on the wiki so we can have Elsie's glorious illustrations.
 
-This page to do list
+General to do list
 
-*link most recent session notes automatically
-*idk other links might be useful also</pre>
+*Make sure all potential tiddlers are linked to with a single name (Rhi)
+*Give all longer session notes a short summary at the top
+*Maybe edit the session notes more though honestly I'm not too fussed
+*make more/better templates
+**NPCs
+**Make PCs look good
+*Make all the missing tiddlers
+
+Tiddler tagged unfinished:
+{{unfinished}}</pre>
 </div>
-<div cap="Getting The Ball Rolling" created="20210910215846970" modified="20210911083336981" tags="Sessions" title="Issue 0">
+<div cap="Getting The Ball Rolling" created="20210910215846970" modified="20210912121308219" tags="Sessions" title="Issue 0">
 <pre>!{{!!cap}}
 
-*[[Shooting Star]], along with her sidekick [[Fastrack]] were facing off against [[The Ringmaster]], who was using a menagerie of evil animals to take over the central tram station, and erect a giant atlas-style statue of himself
+*[[Shooting Star]], along with her sidekick [[Fasttrack]] were facing off against [[The Ringmaster]], who was using a menagerie of evil animals to take over the central tram station, and erect a giant atlas-style statue of himself
 *[[Millennium]] was giving tours nearby, and the rest of the team were present as minor heroes helping with the evacuation
 *The Ringmaster lured Shooting Star to the statue and unleashed some kind of trap. Millennium and [[Tourmaline]] both flew up to help, but got in each other's way somewhat
 *[[Killer Byte]] was monitoring the situation on their supercomputer, figured out the trap, and was trying to yell up advice to Millennium and Tourmaline, not noticing when the globe was dislodged and rolling towards them
@@ -10730,7 +10798,7 @@ This page to do list
 *Fastrack, was jealous of the team and suspicious of Lark when he recognised her, and decided the team were part of a plot by [[The Ingenious Cassandra]] to infiltrate the Guild. Fastrack has used his Twitter Clout to spread rumours about the team. A lot of other sidekicks in particular, are suspicious of the team
 </pre>
 </div>
-<div cap="Pilot" created="20210910221620053" list-after="Issue 0" modified="20210911212721215" tags="Sessions PCLark PCTourm PCKB PCStone PCMill" title="Issue 1">
+<div cap="Pilot" created="20210910221620053" list-after="Issue 0" modified="20210911225423372" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 1">
 <pre>{{||IssueTemplate}}
 
 *Friday afternoon, at the top of the AWA Tower, centre of Eiffel City’s electronics district, the villain [[Gremlin]] was using a strange device to control electronics and cause chaos
@@ -10750,7 +10818,231 @@ This page to do list
 *Millennium has bunch of conditions still
 *The team’s supervisors arranged a debrief for the next day</pre>
 </div>
-<div cap="Cry Me A River" created="20210910222408992" list-after="Issue 1" modified="20210911212832164" tags="PCTourm PCStone PCMill PCLark PCKB Sessions" title="Issue 2">
+<div cap="No &quot;Team&quot; In &quot;I&quot;" created="20210911233439671" list-after="Issue 9" modified="20210911234113260" pclist="[[The Scalding Stone]] Tourmaline Lark Millennium" tags="Sessions" title="Issue 10">
+<pre>{{||IssueTemplate}}
+
+*Lark makes the team goes over the events of [[Issue 8]]
+*Stone mad - Lark mad - Tourm sad
+*Everyone learns [[Mandy]] was there
+*The Supervisors arrive
+**Lark rolls pierce the masks on [[Ophidia]] and decides we can trust her
+**who knows about [[Absolute Zero]]
+**We're asked to go in for power eval
+***Tourm, Mill, &amp; Lark
+**Team's on probation
+*Lark and Stone  talk about shit again and it goes slightly better
+*[[Fasttrack]] tries very hard to [[text the team|Fasttrack texts archive]]
+</pre>
+</div>
+<div cap="Welcome To World Of Land" created="20210911234152791" list-after="Issue 10" modified="20210912114713149" pclist="[[The Scalding Stone]] [[Killer Byte]] Tourmaline Millennium Lark" tags="Sessions" title="Issue 11">
+<pre>{{||IssueTemplate}}
+*We go with [[Fasttrack]] to break into the [[Gadgeteer]]'s base in abandoned amusement park [[World of Land]]
+*It goes mostly very well
+*The Gadgeteer has a millennium conspiracy wall
+*Tourmaline passes out; Lark, Mill &amp; Fasttrack are affected by a [[source|The Source]] draining device
+*We convince the Gadgeteer that we don't need to fight probably and he starts revealing
+**Struff about The Source
+**His dad was [[The Clockmaker]] and he's angry about it
+***He resents Cass for being the daughter of a supervillain and having friends and adult allies
+**The Clockmaker was working with the [[Chell]]
+*We tell fasttrack about the mole and convince him not to tell [[Shooting Star]]
+**We’re really helping them with being honest and open about all the shit they’re dealing with huh</pre>
+</div>
+<div cap="Tourmaline's Bad Idea" created="20210911234904440" list-after="Issue 11" modified="20210912114654510" pclist="[[The Scalding Stone]] [[Killer Byte]] Lark Tourmaline Millennium" tags="Sessions" title="Issue 12">
+<pre>{{||IssueTemplate}}
+
+*Cass is staying at Frankie’s, we get to see their depressing home life and Cass hears from a little bird that [[Amelia]] wants to be in touch
+*Frankie goes with Stone to hospital
+**They run into [[Shooting Star]] who’s being super sus but not in an evil way
+*Tourmaline calls her [[Grandy]]
+**Other [[Chell]] are being weird about earth and Grandy’s gonna let Tourmaline know if she learns anything (from a roll!)
+**Tourmaline talks about how cool earth is
+*KB talks to [[Private Eye]] about what they’ve been doing and the powers shit
+**P-E tells KB to back off from [[Magenta]] and the [[Heroes Guild]] because it’s too dangerous
+*Team meeting!
+**KB is angry, Tourmaline rolls a full success on comfort and support and KB does not become less angry
+**Only KB is encouraging about my excellent plan to have Tourmaline turn into a [[clockmaker|The Clockmaker]] device to find the mole and get more information on Magenta
+*Jamie’s date with [[Noah]] goes fantastic
+**They have a clockmaker vision and run to the bathroom and teleport away
+**Everything is //fine//, they’ll get to explain everything next time
+*Lark and Stone have many things in common
+**I can’t fucking note these scenes but they were amazing
+**Cass talks to Amelia (This was so long ago gonna try and remember my half)
+***Cass asks about weird magic stuff
+***Cass doesn't know what happened during the museum fight and doesn't understand the magic at play here
+***Amelia says she'll look into it
+**Cass asks about weird teenager stuff
+***&quot;What does having a crush feel like?&quot;
+****I hope you're all prepared for the final form of awkward Cass
+**Cass asks for help
+***She's gonna move in with Amelia
+**Stone talks to her [[brother|David]] about being a hero and their shitty parents and stuff
+</pre>
+</div>
+<div cap="Killer Byte's Goodbye" created="20210912004341174" list-after="Issue 12" modified="20210912010322601" pclist="[[Killer Byte]] [[The Scalding Stone]] Tourmaline Lark Millennium" tags="Sessions" title="Issue 13">
+<pre>{{||IssueTemplate}}
+*Tourmaline calls [[Mandy]]
+*Millennium talks to [[Noah]]
+**They have coffee and then Jaime reveals their powers to Noah, who’s amazed but is also chill with it.
+**They go flying on an extremely romantic very anime date
+*Other character scenes happen I think also
+*We go to [[Texas Jaque’s]] for mini golf
+**Source wave hits, KBs powers go mental
+**Team fights a mecha jaque
+**Tourmaline convinces and aids Millennium in being an EMP to stop the jaque
+**KB is knocked out
+*Carry KB home and call all possible useful adults to talk through options
+**[[Private Eye]] says ‘go see this sketchy person on an island somewhere that helped me’
+**Supervisors say ‘the guild can help’
+**[[Absolute Zero]] reveals backstory (they and [[Ophidia]] were empowered by a villain) and says their friends that are kinda associated with [[Magenta]] still could help
+*KB lies to family and adults and takes 0’s option
+**Team know they’re not with PE or guild help but not where or what they're doing
+</pre>
+</div>
+<div cap="Planning Meetings" created="20210912010332113" list-after="Issue 13" modified="20210912104337391" pclist="[[The Scalding Stone]] Lark Millennium Tourmaline" tags="Sessions" title="Issue 14">
+<pre>{{||IssueTemplate}}
+
+*Lark does planning and research into the docks for the [[Queen Mab]] lead
+*Tourmaline learns more about [[The Source]] and [[The Clockmaker]]
+**The Source fluctuations were similar to ripples caused by devices that block the source
+**The clockmaker was interested in drawing power from other realities
+**He wanted time travel but [[The Outstretched Hand]] wouldn't cooperate
+*Tourmaline and Cass go to check out the docks
+**Tourmaline knows where Cass lives, awkward bus ride, feelings talk
+*Leah goes to gymnastics camp
+**[[Shannon-Skye]] is weirdly subdued
+**Leah meets edgy hero [[Blood Moon]] and loses a race
+**Mandy texts to say that Shannon-Skye is up to something
+*Team talks to adults
+**[[Agent Henshaw]] disbands the team the day before the docks
+**The team tells [[The Supervisors]] and [[The Gadgeteer]] what's going down the next day
+</pre>
+</div>
+<div cap="A Spectacular Fight" created="20210912010833285" list-after="Issue 14" modified="20210912011319908" pclist="[[The Scalding Stone]] Tourmaline Lark Millennium" tags="Sessions" title="Issue 15">
+<pre>{{||IssueTemplate}}
+
+*Lark, Tourm and Millenium go to face the magenta event at the docks, where they find [[Magenta]] Leader [[Spectra]] (who can absorb and use other people’s powers)
+**Lark does a sick elbow drop on Spectra, Tourmaline fucks with the goons, and Millenium destroys the cool plant technology being dropped off apart from one piece
+**Lark and Tourm face off with Spectra in a force field until Millenium Snatches the device making it
+*Spectra goes for Millennium and the destroyed tech and ends up spear to toe with lark
+**Millenium escapes and an invisible watcher tries to grab the tech from them
+**Tourmaline runs in to help leaving the goons to go after Millennium
+***Spectra steals shapeshifting from her
+***Spectra gets stabbed by Tourm
+**Millennium is fucked up by the realisation that the invisible watcher is an agent of [[The Ingenious Cassandra]] and immediately passes that on to Lark but keeps the tech
+**Lark nearly drowns Spectra with a terrifying display of magic but restrains herself (and also Spectra with a hefty anchor chain)
+**Tourmaline still doesn’t have their shapeshifting back
+*[[Mandy]] tells Stone that [[Shannon-Skye]]’s family is involved with Magenta and also arranged the location of the gymnastics meet and Stone follows SS as she slips away at night
+**Stone and [[Blood Moon]] face off against [[Moonstalker]] who wants SS and a piece of technology she has
+**Stone gets a ton of potential as shit gets real fucked up, SS has a broken leg and Blood Moon is being choked
+**Stone gets Moonstalker to drop their guard by agreeing to a trade but DOUBLE CROSSES them, uses the device, and manages to get everyone clear and just fucking run(/fly)
+</pre>
+</div>
+<div cap="All Talk, //All// Fun" created="20210912011344299" list-after="Issue 15" modified="20210912012120216" pclist="[[The Scalding Stone]] Tourmaline Lark Millennium" tags="Sessions" title="Issue 16">
+<pre>{{||IssueTemplate}}
+
+*Talking after the fight in Eiffel
+**Lark tries to comfort and support Tourm but she wont open up
+**[[Noah]] turns up, is rebuffed by Lark, Jaime mostly makes nice
+**Tourm opens up a very little to Lark
+*Talking after the fight in [[Inewood]]
+**Leah tells [[Shannon-Skye]] that Leah is gonna take the box and Shannon is gonna lie to her parents and thats how it is
+**Leah agrees to ask Tourmaline about what Bloodmoon has going on
+*The Scalding Stone returns
+**Refuses Tourmaline’s (full success) provoke to say who was selling the box but does reveal that Shannon-Skye’s family is involved
+**Gets the basics on what happened in Eiffel
+*Talk to the supervisors
+**The disbanding had something funky going down and the team is only on suspension
+**[[Spectra]]’s power sap shouldn’t be affecting Tourmaline after like half an hour
+*Stone talks to the [[Gadgeteer]]
+**The Gadgeteer agrees to make the anti-magic box more powerful and is very encouraging about Stone having a weapon that could take down their teammates (making Stone feel very bad about that)
+**The Gadgeteer mentions that the plant tech looks like the Hero [[Evergreen]] working with [[Clockmaker|The Clockmaker]] tech
+*Lark talks to [[Private Eye]]
+**Lark reveals whats going on with Tourmaline (spending a team selfishly) and asks what PE knows about Spectra
+**Lark mentions [[Killer Byte]] and PE goes all scary briefly, gives her a file, and tells her to get out
+*Tourmaline talks to [[Grandy]]
+**Grandy wants Tourmaline to come home (predictably)
+**Something similar happened with a experiment run by [[The Outstretched Hand]] before they left
+*Jaime talks to the Gadgeteer
+**Jaime teleports directly into his lair (rudely) and gets a bit of tech to track the lost tech-mess from the boat drop
+**Jaime and Dadgeteer track the tech-mess to [[The Ingenious Cassandra]]’s place, but don’t go in
+**Dadgeteer also gives Jaime a tech thing to track the dimension shifting
+*Stone talks to [[Mandy]]
+**Catches Mandy up on everything
+**Asks Mandy to look into Evergreen (an ex hero who’s ¿dead?)
+*Lark’s Bad Idea!!!!!!
+**Lark goes to demand her mother’s help with the Spectra power drain situation
+**Lark’s provoke roll fails
+**Lark steals a book of some sort that has a spell that we could use on Spectra to try and reverse steal the powers
+</pre>
+</div>
+<div cap="No Pizza For Catboys" created="20210912104439593" list-after="Issue 16" modified="20210912104852929" pclist="[[The Scalding Stone]] Lark Tourmaline Millennium" tags="Sessions" title="Issue 17">
+<pre>{{||IssueTemplate}}
+
+*We meet with [[Agents Finstair]] (not married) and are mostly unsuspended but have to do our next few missions with the supervisors
+**It goes alright
+*Cass does some magic research with Amelia wrt getting Tourm’s powers back
+**They need something as a link to Spectra    
+***Blood or hair or something with emotional importance
+****How will we get this?
+*Tourmaline chats with Doctor Sinclair
+*We are on patrol
+**[[Rat cat rat cat]]
+**Millennium acts foolhardy in response to Tourm’s (genuine) cry of pain, does a cool thing with powers but it sorta backfires and they K.O. and teleport away, somehow to [[Noah]]
+</pre>
+</div>
+<div cap="God Mode Activated" created="20210912104904824" list-after="Issue 17" modified="20210912114423388" pclist="[[The Scalding Stone]] Lark Tourmaline Millennium" tags="Sessions" title="Issue 18">
+<pre>{{||IssueTemplate}}
+
+*Cass tells the Tourm (and team) that she’s stolen a spellbook from her [[mother|The Ingenious Cassandra]] to steal powers
+**We brainstorm how to get objects connected to [[Spectra]]
+*Leah tries to get useful information from [[Shannon-Skye]]
+**Despite having no useful blackmail leverage she gets the location and code for a safe that has something from spectra
+**She now owes shannon-skye kinda big time
+*The rest of the gang go to ask for [Private-Eye]]’s help, but find her accosted by reporters
+**Tourmaline distracts them by pretending to see [[Tony the Hawk]] incognito across the street
+**Private Eye really could've been more grateful about that
+**Private Eye gives the team a key and address for Spectra’s non lair residence but convinces Cass that Cass needs to make sure [[Killer Byte]]’s safe (and should maybe tell PE about where he is)
+*Lark and Stone go to Shannon-Skye’s parent’s fancy penthouse apartment while they’re out
+**Stone looks silly with her excuse about having to personally plate the Uber-Eats order
+**Cass just walks in in fancy clothes
+**It all goes pretty well but the family gets back early and they shove everything into a bag and exit through the window
+*Tourmaline and Millennium go to Spectra’s place
+**[[Moonstalker]] is there
+**Millenium finds a trophy hall with special importance on a mask from Private Eye
+**Moonstooker finds them there
+**Tourmaline (for the first time in her life) is bad at distracting and is being held hostage by Moonstalker who wants to borrow power from Millennium
+**Millennium's attempts to bargain also go wrong, but before Moonstalker can snatch Tourmaline away to who knows where,
+*Millennium activates their Moment of Truth and experiences a brief godhood
+**Jaime bursts into light Avatar-state style, burning away Moonstalker’s shadows in a matter of seconds, thus saving Tourmaline
+**Spectra’s house is dismantled and reformed in an instant.
+**The same happens to essentially *everything*.
+**Moonstalker vanishes (to [[Clockmaker dimension|Clockmaker 'Verse]])
+**Millennium walks through the wall of the mansion, disintegrating and rebuilding that instantly.
+**They see Everything. Literally Everything. The threads of reality connecting different dimensions, the Source, the Clockmaker, the Whole Of It All.
+**They grab the power from the messed up artifact Cassandra Sr got
+**They teleport the entire team back to the base, kill the trackers from the shit on the stuff from Shannon-Skye’s place and pass out
+</pre>
+</div>
+<div cap="Living The Dream Pt 1" created="20210912105723947" list-after="Issue 18" modified="20210912110740196" pclist="[[The Scalding Stone]] Lark Millennium Tourmaline" tags="Sessions" title="Issue 19">
+<pre>{{||IssueTemplate}}
+
+*Time to make the ritual
+**Go to [[The Docks]] at sunrise
+**[[Amelia]] is in charge and meets the team for the first time
+**[[The Ingenious Cassandra]] offers to help and Cass says no
+*Tourmaline is a pink flecked granite statue in a weird dreamspace
+*[[Spectra]] fight, spectra has a magic crown (hat)
+**The dreamspace pulls people into memories of past events
+**Mill and Tourm relive Mill really injuring Tourm
+*Fight for control of the magic crown (hat)
+**Spectra makes cool floating islands as obstacles
+**Stone gets it and talks to Tourm in a memory of them hanging out on a rooftop
+***Tourm tells Stone that she used to have a crush on her
+***Tourmaline gets the magic crown (hat)
+</pre>
+</div>
+<div cap="Cry Me A River" created="20210910222408992" list-after="Issue 1" modified="20210911225450863" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 2">
 <pre>{{||IssueTemplate}}
 
 *Everyone has a look at the orb:
@@ -10810,7 +11102,154 @@ This page to do list
 **Millennium takes Magpie to the counselling place [[Dom]] works at. Slightly strange villain-defeat but a pretty good one when you think about it?
 </pre>
 </div>
-<div cap="If This Is A Romcom, Kill The Director" created="20210911000350533" list-after="Issue 2" modified="20210911212855355" tags="PCTourm PCStone PCMill PCLark PCKB Sessions" title="Issue 3">
+<div cap="Living the Dream Pt 2" created="20210912110410582" list-after="Issue 19" modified="20210912111636662" pclist="[[The Scalding Stone]] Lark Tourmaline Millennium" tags="Sessions" title="Issue 20">
+<pre>{{||IssueTemplate}}
+
+*The floating islands fall
+**Lark keeps her island up with Mill’s help
+**Tourmaline tries to catch Stone but gets fucked up and looses control of her powers in a terrible way
+**The city and everyone in it gets fucked up
+*Jaime is a semi amorphous energy zone
+**2 Larks
+**Strandbeest tourmaline
+**Tiny stone
+*The waters rise and separate into groups, lark (2) and stone; mill and lark (1); tourm
+**Lark (1) and stone are drowning
+*Lark (2), stone and tourm wash up in the caves tourm was born in
+**Stone is still shrinking, lark 2 is being weird (and not really cass)
+**Tourmaline unshrinks stone, increases stone’s plasticity, and lark comfort/supports her
+**Tourmaline leads them near to the surface where the caves become earth mines and they meet [[Spectra]]
+*Lark (1) and mill are in a bubble at the bottom of the sea
+**Mill gets them out and they emerge at dream [[Texas Jaque’s]] crazy golf and petting zoo
+**[[Texas Jaque|Dream Texas Jaque]]  points them to the ship but wants them to play crazy golf
+**Lark rolls provoke and agrees to a magically binding promise to play crazy golf in the real world instead
+*At some point [[The Ingenious Cassandra]] appears to Lark as a cat offering to help and also I think maybe making things worse when Lark says no again?
+*Tourm goes straight for spectra (and succeeds) but spectra asks for help getting out
+**Spectra has to give them the general direction of her base (up and beyond [[Market St]] i think)
+**They agree, but spectra tries to insult their tactics and tourm cant keep her mouth shut on spectras idiocy
+**Lark (2) tries to stop her from starting shit and fails. Spectra brings a wall separating her and tourm from lark and stone
+*Mill spots tourm and spectra underground
+**Lark tells a little white lie about how mill def wont fuck this up and hurt tourmaline
+**Mill gets them both down on the Lark(2) side of the wall
+*More fighting happens? Spectra tells tourm she’s gonna kill her. Tourmaline tries to push spectra into an endless void. Larks stop her and tourmaline falls into the void but the larks combine save her
+*We get out at the old docks
+*[[Amelia]] is fine
+*Lark is very happy, everyone else is pretty down
+</pre>
+</div>
+<div cap="Everyone Wants to See the Gadgeteer" created="20210912111644901" list-after="Issue 20" modified="20210912114535714" pclist="[[The Scalding Stone]] Tourmaline Lark Millennium" tags="Sessions" title="Issue 21">
+<pre>{{||IssueTemplate}}
+
+*[[Spectra]] is released from the [[Heroes Guild]] and causes a meltdown at the [[Old New Market Bridge Facility]]
+*Meet the Supervisors
+**They're gonna try and handle some [[Magenta]] stuff
+**Tourm tells them spectra has a personal grudge against her and also her suspicions on the old new marked bridge incident
+*Scalding Stone reads the files
+**[[Put info from roll20 here|I21 Magenta Files]]
+*Stone and tourm visit the [[Gadgeteer]]
+**Gag gives stone the source fuckup device
+**Agrees to let tourm look at [[Clockmaker|The Clockmaker]] stuff
+**Is still maintaining mill conspiracy board
+**On the way back they run into lark, both roll to pierce the mask to work out what's going on
+***Tourm fails, lark knows she's hiding something relating to why she saw the gadgeteer
+***Stone full success, finds out lark is going to make a secret identity
+*Lark visits the gadgeteer
+*Get uni paperwork done etc
+**The Gadgeteer tells Lark his secret identity
+*Jaime meets up with Noah
+**Talk about the “Jaime is briefly a god” scene
+**Explain that they kind of banished a villain to an alternate dimension and that they keep shifting into that dimension
+**Noah convinces Jaime to maybe try and get [[Moonstalker]] back
+*Stone/Leah and Tourm have an awkward hangout out of costume
+**Tourm knows Leah’s name
+</pre>
+</div>
+<div cap="Exit Cass, Enter Peregrine" created="20210912112449474" list-after="Issue 21" modified="20210912121436220" pclist="[[The Scalding Stone]] Millennium Tourmaline Peregrine" tags="Sessions" title="Issue 22">
+<pre>{{||IssueTemplate}}
+
+!!!!Tourm's love letter:
+
+*Tourmaline is //bored//.  Nothing exciting has happened for, like, a week. [[Cass|Lark]] calls her and asks to talk. They go for a walk together and ''Cass tells Tourm she has to leave for a while'', sort out some magic stuff and look inside herself etc.
+*Tourm tries to get a read on Cass: question is “Why are you doing this without me?” answer: ''“Because I don’t want you to be nearby if it goes badly”''
+*Cass tells the others she’s leaving, and asks Stone to be what the rest of the team need her to be now Cass is leaving (superior up, saviour down). Stone tries to reject but fails
+
+!!!!Millennium’s love letter:
+
+*''It’s the team's first real action since Cass left'' - a villain named [[Vansquish]] is terrorizing the [[Neon District]]. When Millennium and the other’s show up, Vansquish is already fighting someone invisible. Millennium reaches out their senses and sees ''Peregrine'', who is dodging falling vehicles but doesn’t notice Vansquish rushing him. Millennium helps out, and with the arrival of the team, Vansquish takes off.
+*Peregrine recognises the team, is a little starstruck, immediately points out that Cass is missing, ''and suggests he joins the team''. He shows off with a trick shot. The team call in Peregrine a few times on future missions and he’s pretty helpful! He’s pretty much a member of the team, even if Tourmaline and Stone are a bit cold, and Millennium is a bit patronizing.
+
+!!!!The Scalding Stone’s love letter:
+
+*Stone aces her obligations roll - an opportunity presents itself. ''She talked to [[Mandy]] about [[The Minerva Institute]] stuff'', but Mandy insisted her parents wouldn’t do something like this. The next day, late evening, Mandy leaves Stone a message at their old spot at the park, with the ''address of [[David]]’s house'' and the word “midnight”. (David is Stone’s older brother)
+*Stone calls Tourmaline and asks her to join
+*Stone approaches David’s house, and tries to scope out the situation stealthily. She fails, David spots her, and invites her inside. Tourmaline shows up (in human form) just in time to have some tea. Stone is avoidant about what’s going on, vaguely mentioning an “informant” who told her something would happen here at midnight.
+*At midnight, the lights go out, a window is smashed, and ''tear gas starts to fill the room''. Tourm, who is unaffected by the gas, tries to grab David and Stone and get them outside. In the confusion, she runs right into a group of people with gas masks and stun gun things. There are regular mook people in gas masks, and one [[super-seeming person|Clearcut]] with a sword plus stun gun, which she hits Tourmaline with. By the time Tourmaline and Stone recover, ''everyone, plus David, is gone.''
+*Stone is shell-shocked, Tourm gets her up and asks Merciless Concrete, which just arrived, what they saw. Through Merciless Concrete they learn that the people came in on a ship, and based on where they headed, ''they’re from the Minerva Institute.'' Stone and Tourm agree to call the team
+
+!!!!Straight. Up. Creepin
+
+*Millennium and Peregrine join the other two on [[Merciless Concrete]] as they ''head to the Minerva Institute''
+*Peregrine drops down and scopes out the building, with Tourmaline providing support overhead. He figures out that the Minerva Institute has been silent (like, not had this building and stuff) until a few months ago, and finds a good entrance through the hangar/garage
+**''Tourmaline and Peregrine sneak in.'' When a scientist walks by, Tourmaline leads in pretending to totally-meant-to-be-here. It works, and the scientist ([[Natasha Klein]], head of practical applications) leads us to where we need to go.
+*Tourm and Peregrine end up on an ''observation deck'' with some security guards around. Through a glass window, the deck is looking over a ''big science room with pods, empty except for one that contains David.'' People are getting ready to do science
+*Tourm and Peregrine share a quick celebration, then ''call in Millennium and Stone.'' Millennium executes a perfect teleport and Stone leaps into action while the guards are surprised.
+**Stone throws one through the window and jumps down after him. Action time!
+**Tourm transforms into a wild scorpion fish style thing to freak out/draw the attention of the other guards on the deck. She frightens them into being obvious when they call for backup from two different places
+**Millennium and Peregrine block the two doors backup is meant to come through. The other guards rush Tourm and she matadors them off the deck
+**There’s a room on the other side of the observation deck where the controls and everything are.
+*Stone, down in the science room, rushes through to the opposite room and threatens scientists to release David from the pod. She doesn’t notice from one of the unblocked doors a short, very built ''person with a sword coming through and heading straight towards Stone.''
+</pre>
+</div>
+<div cap="A Tubular Fight" created="20210912115030898" list-after="Issue 22" modified="20210912121531453" pclist="[[The Scalding Stone]] Peregrine Millennium Tourmaline" tags="Sessions" title="Issue 23">
+<pre>{{||IssueTemplate}}
+
+!!!!Continued science room fight time!
+
+*In the control room, Stone tries to intimidate the scientists to release [[David]]. She freaks them out but they don’t comply
+*Peregrine shoots a grappling arrow to swing down to the walkway in front of Sword Person: [[Clearcut]] (they). He tells them to stop, but gets a “nothing personnel kid” and a sword to the face. He gets the vibe that they’re a mercenary type. Peregrine blocks with his bow but then goes for a punch and gets embarrassingly easily aikido-d off the walkway
+*Tourm flies at Clearcut to try and take their gun, but is also bested
+*''The head scientist, [[Dr Olowu]] (he)'', confronts Stone: makes a genuine offer to ''help Stone understand her powers better'', “you need our help more than you know”. Olowu knows her real name and suggests the rest of her siblings also share untapped potential
+*With Peregrine and Tourmaline unable to get the job done, Millennium warps Clearcut into one of the tubes to get them out of the way.
+*Stone tries to get a read on the scientists and what their intentions are. She rolls abysmally and lets her guard down long enough for Dr Olowu to get close to a button and give her an ultimatum; either volunteer herself for research or else they’ll have to use David.
+*In the main room, Tourm, Peregrine, and Millennium hear more people starting to come through the unblocked door.
+
+!!!!This is next session but I’ll just keep this going
+
+*The tube Cleacut is in starts filling with weird science liquid. An annoyed Peregrine taunts them, and gets the vibe that he’ll get influence over them if he lets them out instead of continuing to taunt, so he smashes open the tube to let them out
+*The guards enter the main room. They look more serious than the others, tactical gear, big science guns and… goggles? As they enter ''the lights go out''
+*Tourm assesses and remembers seeing a button for the emergency lights back on the observation deck. David and Peregrine appear to be in the most immediate trouble, one being hooked up to a science machine and one being right next to a person with a sword, in the dark
+*With the dark as a surprise, ''the guards take shots at Millennium''. They actually hit them in the arm, and Millennium retaliates in shock and anger. In the dark, ''Millennium hits Peregrine'' who bolted when he heard the gunshots. Peregrine is thrown back and smashes through one of the pods, falling unconscious. ''This draws the attention of a mysterious figure'' 
+*Stone turns away from Dr Olowu as she hears the noise. Tourm speeds too fast for the guards to hit her and slams the emergency lights button, revealing the scene to Stone. ''Prioritising the team over her brother in the moment'', Stone rushes the guards, taking 1 out and disarming the others.
+*In the light, Millennium sees that they hit Peregrine and rushes over. Peregrine wakes up, sees Millennium over him, and ''scrambles away in fear''. Seeing a team member be genuinely terrified of them hits Millennium hard and ''they teleport away''.
+*Tourm tells Stone to grab Peregrine (revealing Peregrine’s hero name to anyone watching) and manages to do tech-stuff to get David out of the tube
+*''Tourm and Stone carry David and Peregrine towards an exit'' (not the way we came, a way that is likely to be less guarded). Clearcut shoots Tourm as she leaves, and she drops David on the observation deck. Clearcut is obviously set on stopping us from taking David
+*We catch a breather outside the door of the observation deck. ''Tourm offers to shapeshift to look like Stone and buy time'' for Stone to get Peregrine and David away. Tourm and Stone have a nice friendship moment where Stone promises to come back if necessary.
+*Stone, David, and Peregrine make their way out as Tourm fights Clearcut to distract them. Tourm (still disguised as Stone) is ''overpowered and placed in the one remaining tube''. Dr Olowu monologues; when [[Magenta]] were doing their [[Source|The Source]] experiments the Source-waves sent throughout the city responded weirdly to Leah and her family. ''[[Her parents|The Conrad Family]] were involved in some sort of powers experiment before the Bug that was believed to have failed.'' [[The Minerva Institute]] picked up on the weird signals and realized the experiments succeeded. They’ve developed devices that should unlock untapped powers in Stone by linking her to the Source (which she previously wasn’t). Tourm thinks this is actually pretty interesting and lets it happen. ''Tourmaline gains her polismancy powers'', linking her to Eiffel City:
+**Supernatural senses: The city is under your skin. You know streets you’ve never seen before. A hermetic student leaves their isolation and you feel their emptiness as they pass.
+**~~Psychic~~ City constructs: The city is malleable beneath your fingers. A doorway in a wall, a sword from cast iron railings.
+*Peregrine, Stone, and David sneak to the garage. Peregrine drives them out in a sick hovercraft
+*As Tourm fades in and out of awareness, she sees glimpses of the mysterious figure from before; very nice suit, slightly robotic voice
+*Tourmaline awakens properly to her powers and is able to escape in the chaos
+*Mysterious figure is not displeased with the data despite the unexpected results
+
+</pre>
+</div>
+<div cap="After the Tubes" created="20210912120306528" list-after="Issue 23" modified="20210912121153525" pclist="[[The Scalding Stone]] Peregrine Tourmaline Millennium" tags="Sessions" title="Issue 24">
+<pre>{{||IssueTemplate}}
+
+*Jump back to Millennium teleporting away, to the quarry they and [[Dom]] hang out in. Dom senses Millennium freaking out and shows up. Mill explains what happens and Dom tells them they can’t avoid danger, but can prepare and be ready for it, suggests doing some powers-meditation-y stuff
+*Back on the aircraft, [[David]] starts to come to. Peregrine eavesdrops while driving, and hears Leah’s name. Stone breaks down and David comforts her. 
+*Tourm has escaped from the institute and is overwhelmed by her new powers - she flies up high to try and escape the noise. [[Merciless Concrete]] goes to her and observes that Tourm is less and less Chell
+*Stone and David go to move their family
+**Stone has a rough discussion with David about what to do. Stone’s younger siblings: [[Maggy, Nancy, Daniel|The Conrad Family]]
+**Stone calls Mandy to ask if she can organize somewhere safe for her family - Mandy rents a hotel suite
+**Stone and David go to their parents, mention [[The Minerva Institute]], and convince them to come with them
+**Millennium comes along to keep an eye on things and help with siblings
+*Tourm and Peregrine go to crash the stolen dropship into the [[Inaccessible Car Park]] in [[Kingfisher Park]]
+**Tourm has to be dragged out by pavement foxes and leaves behind something that will give more data about the [[Chell]]
+</pre>
+</div>
+<div cap="If This Is A Romcom, Kill The Director" created="20210911000350533" list-after="Issue 2" modified="20210911225538757" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 3">
 <pre>{{||IssueTemplate}}
 
 *Lark and Millennium meet with [[Dom]] to chat, and also to do some training together
@@ -10822,7 +11261,7 @@ This page to do list
 *Tourmaline finds a note from [[Magpie]] on the door of her ship giving the team a lead on [[Moonstalker]] and what will turn out to be [[Magenta]]
 </pre>
 </div>
-<div cap="All Hands On Holo-Deck" created="20210911000905638" list-after="Issue 3" modified="20210911212919105" tags="PCTourm PCStone PCMill PCLark PCKB Sessions" title="Issue 4">
+<div cap="All Hands On Holo-Deck" created="20210911000905638" list-after="Issue 3" modified="20210911225607336" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 4">
 <pre>{{||IssueTemplate}}
 
 *The team meet with [[Shooting Star]] for their training session; she’s booked them time in [[C4]], the holodeck-style training centre (the technology’s weird ok don’t ask me to explain it) designed by some of the tech-heroes of the guild. They’ve modelled a lot of it after Creatures &amp; Clocktowers, which they play together
@@ -10873,75 +11312,235 @@ This page to do list
 
 </pre>
 </div>
-<div cap="Eight Heads..." created="20210911002004925" list-after="Issue 4" modified="20210911212931971" tags="PCTourm PCStone PCMill PCLark PCKB Sessions" title="Issue 5">
+<div cap="Eight Heads..." created="20210911002004925" list-after="Issue 4" modified="20210912121321910" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 5">
 <pre>{{||IssueTemplate}}
 
-The first half of the hydra fight, facing off against [[Fastrack]], [[Pollux, Castor|Pollux and Castor]], and [[Kid Slime]] as well as a holo-mechanical hydra.
+The first half of the hydra fight, facing off against [[Fasttrack]], [[Pollux, Castor|Pollux and Castor]], and [[Kid Slime]] as well as a holo-mechanical hydra.
 
 Notable events:
 
 *Tourmaline poisons Fasttrack with the poison head
 *We hit the button of winning but the simulation doesn't end.</pre>
 </div>
-<div cap="...Are Better Than One" created="20210911002339611" list-after="Issue 5" modified="20210911212942427" tags="PCTourm PCStone PCMill PCLark PCKB Sessions" title="Issue 6" type="">
+<div cap="...Are Better Than One" created="20210911002339611" list-after="Issue 5" modified="20210912121332072" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 6" type="">
 <pre>{{||IssueTemplate}}
 
-The second half of that fight, facing off against [[Fastrack]], [[Pollux, Castor|Pollux and Castor]], and [[Kid Slime]] as well as a holo-mechanical hydra.
+The second half of that fight, facing off against [[Fasttrack]], [[Pollux, Castor|Pollux and Castor]], and [[Kid Slime]] as well as a holo-mechanical hydra.
 
-*Millenium accidents warps themself, Tourmaline, KB, and at least one of Fasttrack's crew to a [[post apocalyptic research hellscape|Clockmaker 'Verse]] where they see the [[Clockmaker]] before returning
-**Tourmaline contacts a [[Chell]] research station for help (theorised to be involved with [[The Outstretched Hand]]
+*Millenium accidents warps themself, Tourmaline, KB, and at least one of Fasttrack's crew to a [[post apocalyptic research hellscape|Clockmaker 'Verse]] where they see [[The Clockmaker]] before returning
+**Tourmaline contacts a [[Chell]] research station for help (theorised to be involved with [[The Outstretched Hand]])
 *The orb explodes when KB tries to use it
 *Everyone gets real fucked up (especially KB, Lark, and Millennium)
 *Tourmaline blasts a hole through the side of the collusseum with a rocket</pre>
 </div>
-<div created="20210911202954563" modified="20210911212642959" tags="templates" title="IssueTemplate">
+<div cap="A Date With Destiny" created="20210911230337098" list-after="Issue 6" modified="20210911231827288" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium" tags="Sessions" title="Issue 7">
+<pre>{{||IssueTemplate}}
+
+!!!!Lark Gets Her Friend’s Aunt Stabbed 
+*Lark decides to go chat to [[Private Eye]] in an attempt to find out what’s going on with her mother, [[The Ingenious Cassandra]]. When Lark arrives, Private Eye is in the middle of beating up interrogating a couple of nondescript goons. Lark decides this is as good a time as any to chat, and walks up and says hi. After being asked to wait around the corner, Lark notices that the goon is pulling a knife and tries, and fails, to stop Private Eye from being stabbed.
+*Freshly stabbed, Private Eye reluctantly and awkwardly talks with Lark about some stuff. Most notably, a potential job that The Ingenious Cassandra is planning (to steal a painting for her Hall of Half-Finished Art), Lark agrees to try and stop The Ingenious Cassandra’s heist, which Private Eye seems to find amusing.  
+**Private Eye reveals to Lark that in order to gain her respect, she should Mess With/Inconvenience/Fight Against The Ingenious Cassandra and Get [[Killer Byte]] to Praise Her to Private Eye.
+*In return for the tip about the museum, Private Eye asks that Lark give her any information she finds on The Scalding Stone in the future
+
+!!!!Millennium Chats to a Youth Counsellor
+*Millennium, unsure of themselves after losing control of their powers, goes to chat to [[Dom Palmer]] about the last mission. Dom recommends Millennium talks to their teammates to understand their powers better. 
+*He also gives them a contact number for [[Rook Discoveries]], a science company researching powers and the [[Millennium Bug]].
+
+!!!!Tourmaline Gets a Date
+*[[Mandy]] and Tourmaline text each other, with the support of Leah (The Scalding Stone) and Cass (Lark), and manage to successfully arrange a date despite the aforementioned support. 
+*Cass for sure thinks she’s getting asked out by Tourm but is totally cool absolutely no problem with that not being the case and helping Tourm with this totally not with her date.
+
+!!!!The Scalding Stone Experiences Foreshadowing
+*Leah and Mandy attend an (unscheduled?) school assembly where the principal instructs the students to report any information they have on a potentially dangerous hero known as The Scalding Stone who’s been seen around the school.
+
+!!!!Millennium Also Gets a Date
+*Jaime meets [[Noah Stern]], an archaeology student, while giving a tour around Eiffel City. Noah likes Jaime because they “seem like a normal person in this weird city”. They kinda hit it off immediately. 
+
+!!!!The Scalding Stone Kicks a Rich Girl in the Face
+*Rich girl [[Shannon-Skye]] is being mean about Leah not attending Gymnastics and Leah promptly ‘trips’ into her face and fucks her up. Some of shannon-skye’s friends notice Leah’s extreme skills and are a bit suspicious
+*It is revealed that Leah will lose her scholarship if she doesn’t go to a gymnastics camp that coincides with the date of a shipment the team had discussed sabotaging.
+
+!!!!Tourmaline Goes on a Date
+*Mandy takes Tourmaline clothes shopping and buys her stuff and also they steal a bus seat print maxi dress together. Then Mandy takes Tourmaline to a mystery second activity...
+
+!!!!Lark Chats to Evelyn
+*Lark chats to [[Evelyn Day]] about plans for her upcoming appearance on the talk show. Was there anything important here? Evelyn wants juicy hero stories. Lark knows no-one.
+
+!!!!The Threads Converge
+*Tourmaline and Mandy's date ends with Mandy revealing that she had plans to stop the theft of a painting. Meanwhile, Lark tells Evelyn she should come along and film this next mission.
+*Stone is out of costume scouting out the museum, Torm and Mandy are also in the museum scouting it out, Mandy spots Stone and has to try and hide from stone.
+*A plan is made.
+**Mandy fucks with the lights. 
+**Tourmaline plays a goon so the real goons wont stop her as she steals the painting first. 
+*The Scalding Stone goes to save Mandy when she hears Mandy scream from the coatroom. Lark and Millennium go to take on goons on the floor. Tourmaline rockets towards a skylight with the painting and runs into The (mildly hypnotising) Ingenious Cassandra (Lark’s mum).
+
+!!!!The Scalding Stone Makes a Choice
+*Mandy runs off into the night (cue The Scalding Stone Face Journey). Lark sends Millennium to help Tourmaline and immediately gets into trouble with the Goons as The Ingenious Cassandra expounds on the futility of heroism. Tourmaline leaves Millennium with the painting and goes to help Lark.
+*The Scalding Stone runs off after Mandy, abandoning the team. Millennium escapes with the painting outside and stays there. Lark and Tourmaline face the villains alone and Tourmaline punches Cassandra sr in the face.
+
+!!!!Lark’s Moment of Truth
+The Ingenious Cassandra, angered by Tourmaline’s punch, turns towards her, readying some powerful magic as retribution. Lark, though, has other plans and she blinks across the room interrupting her mother's spell with a flying punch. Lark blinks around the museum, brutally defeating the remaining goons before turning back to her mother, both now charged with dark magical energy. 
+
+The two of them fight using very similar moves, a lot of fast teleporting and predictive magical blasts. Presumably realising the danger the two of them were causing to the onlookers, Lark decided to take the fight outside… through the skylight. Now flying above the museum Cassandras Jr. and Sr. continue their battle, visible to onlookers in brief flashes as they move around the sky in the midst of a gathering, local maelstrom. The fight continues for only a short while before The Ingenious Cassandra decides that now is not the time and retreats… for now...
+</pre>
+</div>
+<div cap="Where In The World Is Killer Byte" created="20210911231627141" list-after="Issue 7" modified="20210912121356035" pclist="Tourmaline [[The Scalding Stone]] Millennium Lark" tags="Sessions" title="Issue 8">
+<pre>{{||IssueTemplate}}
+
+*Leah &amp; [[Mandy]] have a heart to heart
+**Mandy asks if she should be The Scalding Stone’s friend or Leah’s
+**Mandy says she’s gonna fix the problem of being happy or safe
+*Lark continues her dramatic exit (walks off) &amp; [[Dom]] finds her
+*Tourmaline is pissed with Millennium
+*Millennium gets a phone call from Private Eye worried about where the fuck KB is
+*Scalding stone goes to [[Killer Byte]]'s house, everyone else checks the last known location
+**Clues are found at scene
+**Group converges at KBs house to get more info and access computer
+*Tourm and Stone go to see Siobhan who apparently KB hangs with
+**Surprise! It’s [[Gremlin]]!
+**Talk about Mandy
+***Scalding Stone blames Tourm for putting her in danger and says Tourmaline can’t understand what’s at stake wrt caring if people get hurt
+***Tourm thinks Stone’s a fucking idiot
+*Lark and Mill go to drycleaners...
+
+
+
+Clues roundup:
+
+*Matchbook containing villain bar pins
+*[[Moonstalker]] and [[Sirensong]] involved (via drone)
+*Villain bar (found location from gremlin)
+*Siobhan house brownies
+*[[Cleangood Drycleaning]] van
+*Hat (worn by Lark)
+</pre>
+</div>
+<div cap="Do You Have A Reservation" created="20210911232254541" list-after="Issue 8" modified="20210912114842800" pclist="[[The Scalding Stone]] [[Killer Byte]] Tourmaline Lark Millennium" tags="Sessions" title="Issue 9">
+<pre>{{||IssueTemplate}}
+
+!!!!Killer Byte Trolls Some Noobs
+*Killer Byte wakes up, tied to a chair in a room with two people attempting to access their laptop
+**Upon being asked the password, they tell the guards “eat my entire ass”
+***One of the guards attempts to enter this into the password box before realising they’re being fucked with
+*Killer Byte attempts to provoke the guard into foolish action (i can’t remember what it was)
+**The guard approaches Killer Byte aggressively
+*[[Sirensong]] enters the room and tells the guards to leave
+**She unties killer byte while using creepy voice powers
+*Killer Byte bolts towards the door.
+
+!!!!Lark and Millennium Assault a Dry-cleaners
+*Lark and Millennium find [[Cleangood Drycleaning]] and basically just kick shit off
+**Millennium teleports them into the back room where:
+***Lark beats up some people
+***Millennium bars the door by basically clipping a construction through it 
+***They steal a science gun
+***They steal a van
+****The van also contains a bunch of stolen hero tech
+***They work out where Killer Byte is by looking at the GPS in said van
+****[[The DeWitte Hotel]]
+**Lark fires the gun and it shoots some melty goo stuff
+
+!!!!Killer Byte Doubts Their Heroism
+*Killer Byte is stopped from running by Sirensong’s mind controlling powers
+*They attempt to fight back but end up exhausting themselves, giving in fully to the control
+*Sirensong tries to convince Killer Byte to become a villain and work with her
+
+!!!!The Team Does Not Have a Reservation
+*The team meets at the hotel and attempts to enter by passing themselves off as Cleangood Staff
+**This does not work
+*Tourmaline attempts to threaten the guards into telling her where Killer Byte is in the hotel
+**This does not work and...
+
+!!!!Tourmaline Gets Shot
+*Tourmaline loses control of her powers and herself
+**What if the [[Astral Spike|https://youtu.be/-O7uVfRxTg4?t=1668]] from control (thats the best video I can find but its not great) crossed with the [[horrible deepdream frog|https://youtu.be/FEHNvuRvo7M]]
+**The shooter is instinctively de-armed
+*Lark tells Millennium and The Scalding Stone to find Killer Byte and stays behind to calm Tourmaline down saying that they will catch up in a bit
+**The others really do not hesitate to leave
+
+!!!!Millennium Blows Up the Scalding Stone
+*Whilst attempting to get into the hotel, The Scalding Stone and Millennium come under fire by the guards
+*The Scalding Stone takes a shot but weathers the blow
+*As another shot is heading towards The Scalding Stone, Millennium creates an energy shield to protect her
+**This Does Not Work
+*The bullet and the shield explode, taking out the guards but also blowing up The Scalding Stone
+**The Scalding Stone weathers this blow also, but is kinda pissed at Millennium on account of being blown up
+
+!!!!We’re All Really Queer on Main
+*Lark slowly approaches Tourmaline who backs away
+*Lark talks softly to her and asks if Tourmaline recognises her
+**Tourmaline’s shapeshifting calms in response to this
+*Lark starts humming the melody that was playing in the ballroom scene at C4
+**She reaches her hand out to hold hands with Tourmaline
+**Tourmaline now has a hand again and it’s holding Lark’s
+*Lark notices a guard trying to shoot Tourmaline and spins them both so she is between Tourmaline and the bullet
+**She shields her own back with magical energy but is knocked into Tourmaline and her head rests briefly on her shoulder
+
+!!!!Killer Byte Snaps (out of it)
+*KB hears explosions right as they’re about to give over their password
+*KB really does not want to give their password
+*All the lights blow dramatically and the door locks
+
+!!!!The Team Refuses to Wait For the Lift
+*The Scalding Stone jumps down the lift shaft so I guess that’s how we’re doing it
+*Millennium takes care of some grunts with help
+
+!!!!Killer Byte Punches Lark
+*KB is free and going after Sirensong with abandon
+*Lark stops them and gets punched in the face
+
+!!!!All's Well That Ends Well
+*The team escapes to the spaceship, fobs off Private Eye and heads back to Tourmaline’s
+*KB can hear [[Merciless Concrete]] in their mind</pre>
+</div>
+<div created="20210911202954563" modified="20210911230102762" tags="templates" title="IssueTemplate">
 <pre>!{{!!cap}}
 //
 Starring:
-&lt;$list filter=&quot;[{!!title}tags[]] +[get[char]] +[butlast[]]&quot;&gt;
+&lt;$list filter=&quot;[list[!!pclist]sort[]] +[butlast[]]&quot;&gt;
 &lt;$link to=&lt;&lt;currentTiddler&gt;&gt;/&gt;, 
 &lt;/$list&gt;
-&lt;$list filter=&quot;[{!!title}tags[]] +[get[char]] +[last[]]&quot;&gt;
+and
+&lt;$list filter=&quot;[list[!!pclist]sort[]] +[last[]]&quot;&gt;
 &lt;$link to=&lt;&lt;currentTiddler&gt;&gt;/&gt;
 &lt;/$list&gt;
 //
 </pre>
 </div>
-<div char="Killer Byte" created="20210911192204886" modified="20210911194842645" title="PCKB">
-<pre></pre>
+<div aka="Frankie Owl Belson" created="20210912123629040" modified="20210912123808131" player="Eric" pronouns="they/he" tags="PCs unfinished" title="Killer Byte">
+<pre>{{||PCTemplate}}</pre>
 </div>
-<div char="Lark" created="20210911192128988" modified="20210911194756474" title="PCLark">
-<pre></pre>
+<div aka="Cass, Cassandra August Reyner III, August Reynolds" created="20210912122531834" modified="20210912122946336" player="Kara" pronouns="she/her" tags="PCs unfinished" title="Lark">
+<pre>{{||PCTemplate}}</pre>
 </div>
-<div char="Millennium" created="20210911192233081" modified="20210911194828756" title="PCMill">
-<pre></pre>
+<div aka="Jamie Winters, Bug" created="20210912123149192" modified="20210912123332877" player="Jay" pronouns="they/them" tags="PCs unfinished" title="Millennium">
+<pre>{{||PCTemplate}}</pre>
 </div>
 <div created="20210911181003706" modified="20210911181150846" tags="TableOfContents" title="PCs">
 <pre>&lt;&lt;list-links &quot;[tag[PCs]]&quot;&gt;&gt;</pre>
 </div>
-<div char="The Scalding Stone" created="20210911192219846" modified="20210911194819611" title="PCStone">
-<pre></pre>
-</div>
-<div aka="other, names, listed, here" created="20210911133002319" list="" modified="20210911203918217" player="Name" tag-name="PCAbbrv" tags="templates" title="PCTemplate">
+<div aka="other, names, listed, here" created="20210911133002319" list="" modified="20210911225300480" player="Name" pronouns="(pronouns)" tags="templates" title="PCTemplate">
 <pre>//AKA: {{!!aka}}//
+
+{{!!pronouns}}
 
 ''Player: {{!!player}}''
 
 &lt;$details summary=&quot;Featured In&quot;&gt;
 
-&lt;&lt;list-links &quot;[tag{!!tag-name}]&quot;&gt;&gt;
+&lt;&lt;list-links &quot;[contains:pclist{!!title}]&gt;&gt;
 
 &lt;/$details&gt;
 
 &lt;$details summary=&quot;Mentioned In&quot;&gt;
 
-&lt;&lt;list-links &quot;[{!!title}backlinks[]] -[tag{!!tag-name}]&quot;&gt;&gt;
+&lt;&lt;list-links &quot;[{!!title}backlinks[]] -[contains:pclist{!!title}]&quot;&gt;&gt;
 
 &lt;/$details&gt;
 </pre>
 </div>
-<div char="Tourmaline" created="20210911192153140" modified="20210911195705440" title="PCTourm">
-<pre></pre>
+<div aka="Xander Nakamura" created="20210912123505904" modified="20210912123621263" player="Elsie" pronouns="he/him" tags="unfinished PCs" title="Peregrine">
+<pre>{{||PCTemplate}}</pre>
 </div>
 <div created="20210910212306143" modified="20210911181234131" tags="TableOfContents" title="Sessions">
 <pre>&lt;&lt;list-links &quot;[tag[Sessions]]&quot;&gt;&gt;</pre>
@@ -10953,14 +11552,15 @@ Starring:
 
 &lt;/div&gt;</pre>
 </div>
-<div created="20210910205301919" modified="20210910205745284" tags="" title="Test">
-<pre>This is a nearly blank wiki with this page and ExtentionResources</pre>
-</div>
-<div aka="Rhyolitic Tephra" created="20210911213006569" modified="20210911213147337" player="Rhi" tag-name="PCTourm" tags="PCs unfinished" title="Tourmaline">
+<div aka="Leah Conrad" created="20210912123019003" modified="20210912123840489" player="Eiriol" pronouns="she/her" tags="PCs unfinished" title="The Scalding Stone">
 <pre>{{||PCTemplate}}</pre>
 </div>
-<div title="Untitled">
-<pre>DetailsExample</pre>
+<div aka="Rhyolitic Tephra" created="20210911213006569" modified="20210912122917789" player="Rhi" pronouns="she/they" tags="PCs unfinished" title="Tourmaline">
+<pre>
+{{||PCTemplate}}</pre>
+</div>
+<div created="20210912124016338" modified="20210912124024441" title="unfinished">
+<pre>&lt;&lt;list-links &quot;[tag[unfinished]]&quot;&gt;&gt;</pre>
 </div>
 
 
