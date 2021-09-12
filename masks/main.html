@@ -259,15 +259,27 @@ Error message and password prompt
 
 <li>IssueTemplate</li>
 
+<li>Killer Byte</li>
+
+<li>Lark</li>
+
+<li>Millennium</li>
+
 <li>PCs</li>
 
 <li>PCTemplate</li>
+
+<li>Peregrine</li>
 
 <li>Sessions</li>
 
 <li>TableOfContents</li>
 
+<li>The Scalding Stone</li>
+
 <li>Tourmaline</li>
+
+<li>unfinished</li>
 
 </ul>
 </p>
@@ -10264,8 +10276,8 @@ Error message and password prompt
 <div created="20210911142624341" modified="20210912120247139" title="$:/state/notebook-sidebar">
 <pre>yes</pre>
 </div>
-<div created="20210911142628250" modified="20210912114940108" title="$:/state/notebook-sidebar-section">
-<pre>TableOfContents</pre>
+<div created="20210911142628250" modified="20210912123959752" title="$:/state/notebook-sidebar-section">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20210911230855267" modified="20210912115039512" title="$:/state/showeditpreview">
 <pre>no</pre>
@@ -10276,8 +10288,8 @@ Error message and password prompt
 <div created="20210912114244797" modified="20210912114252889" title="$:/state/tab-627419644">
 <pre>$:/core/ui/TiddlerInfo/Advanced</pre>
 </div>
-<div created="20210912114342755" modified="20210912114342755" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/Missing</pre>
+<div created="20210912114342755" modified="20210912121939384" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
 <div created="20210911181746409" modified="20210911183102942" title="$:/state/toc/TableOfContents-PCs-1871113288">
 <pre>open</pre>
@@ -10288,7 +10300,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210912115011353" list="[[Issue 24]]" modified="20210912115011353" title="$:/StoryList">
+<div created="20210912124002235" list="unfinished Home" modified="20210912124006813" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190419181423958" modified="20210910214436809" title="$:/theme">
@@ -10725,7 +10737,7 @@ Error message and password prompt
 <div created="20210910213310065" modified="20210910213315619" title="$:/view">
 <pre>classic</pre>
 </div>
-<div aka="fake name, faker name" created="20210911180553051" modified="20210911235727047" player="Human" pronouns="(pronouns)" tag-name="PCAbbrv" tags="PCs" title="Example PC">
+<div aka="fake name, faker name" created="20210911180553051" modified="20210912122937634" player="Human" pronouns="pronouns" tags="PCs" title="Example PC">
 <pre>{{||PCTemplate}}
 
 Everything above this point will be laid out via fields and templates which makes it easily changeable for all PCs if someone were to suggest alternate layout.
@@ -10748,27 +10760,35 @@ For nesting you need the content to be another tiddler
 
 &lt;/$details&gt;</pre>
 </div>
-<div created="20210910212100945" modified="20210912114358794" tags="unfinished" title="Home">
-<pre>For those in search of a to do list, click More in the sidebar and check out the Missing tab for a list of referenced pages that don't exist, (or find the same list [[here|$:/core/ui/SideBar/More]]).
+<div created="20210910212100945" modified="20210912123953757" tags="" title="Home">
+<pre>Most recent session notes:
+&lt;$list filter=&quot;[tag[Sessions]] +[last[]]&quot;&gt;
+&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;/&gt;
+&lt;/$list&gt;
+
+
+Check out the Missing tab for a list of referenced pages that don't exist, (or find the same list [[here|$:/core/ui/SideBar/More]]).
 
 This is the github repository: https://github.com/RhiZoun/rhizoun.github.io
 You may notice there's shit other than masks there, ignore all that everything relevant will be stored in [[here|https://github.com/RhiZoun/rhizoun.github.io/tree/main/masks]]. As of 11/09/21 that's just the tiddlywiki itself (main.html) but at some point I'll work out shit like storing images in separate files to use on the wiki so we can have Elsie's glorious illustrations.
-
-This page to do list
-
-*link most recent session notes automatically
 
 General to do list
 
 *Make sure all potential tiddlers are linked to with a single name (Rhi)
 *Give all longer session notes a short summary at the top
 *Maybe edit the session notes more though honestly I'm not too fussed
-*Make all the missing pages</pre>
+*make more/better templates
+**NPCs
+**Make PCs look good
+*Make all the missing tiddlers
+
+Tiddler tagged unfinished:
+{{unfinished}}</pre>
 </div>
-<div cap="Getting The Ball Rolling" created="20210910215846970" modified="20210911083336981" tags="Sessions" title="Issue 0">
+<div cap="Getting The Ball Rolling" created="20210910215846970" modified="20210912121308219" tags="Sessions" title="Issue 0">
 <pre>!{{!!cap}}
 
-*[[Shooting Star]], along with her sidekick [[Fastrack]] were facing off against [[The Ringmaster]], who was using a menagerie of evil animals to take over the central tram station, and erect a giant atlas-style statue of himself
+*[[Shooting Star]], along with her sidekick [[Fasttrack]] were facing off against [[The Ringmaster]], who was using a menagerie of evil animals to take over the central tram station, and erect a giant atlas-style statue of himself
 *[[Millennium]] was giving tours nearby, and the rest of the team were present as minor heroes helping with the evacuation
 *The Ringmaster lured Shooting Star to the statue and unleashed some kind of trap. Millennium and [[Tourmaline]] both flew up to help, but got in each other's way somewhat
 *[[Killer Byte]] was monitoring the situation on their supercomputer, figured out the trap, and was trying to yell up advice to Millennium and Tourmaline, not noticing when the globe was dislodged and rolling towards them
@@ -11144,7 +11164,7 @@ General to do list
 **Tourm knows Leah’s name
 </pre>
 </div>
-<div cap="Exit Cass, Enter Peregrine" created="20210912112449474" list-after="Issue 21" modified="20210912114548573" pclist="[[The Scalding Stone]] Millennium Tourmaline Peregrine" tags="Sessions" title="Issue 22">
+<div cap="Exit Cass, Enter Peregrine" created="20210912112449474" list-after="Issue 21" modified="20210912121436220" pclist="[[The Scalding Stone]] Millennium Tourmaline Peregrine" tags="Sessions" title="Issue 22">
 <pre>{{||IssueTemplate}}
 
 !!!!Tourm's love letter:
@@ -11160,7 +11180,7 @@ General to do list
 
 !!!!The Scalding Stone’s love letter:
 
-*Stone aces her obligations roll - an opportunity presents itself. ''She talked to [[Mandy]] about the [[Minerva Institute]] stuff'', but Mandy insisted her parents wouldn’t do something like this. The next day, late evening, Mandy leaves Stone a message at their old spot at the park, with the ''address of [[David]]’s house'' and the word “midnight”. (David is Stone’s older brother)
+*Stone aces her obligations roll - an opportunity presents itself. ''She talked to [[Mandy]] about [[The Minerva Institute]] stuff'', but Mandy insisted her parents wouldn’t do something like this. The next day, late evening, Mandy leaves Stone a message at their old spot at the park, with the ''address of [[David]]’s house'' and the word “midnight”. (David is Stone’s older brother)
 *Stone calls Tourmaline and asks her to join
 *Stone approaches David’s house, and tries to scope out the situation stealthily. She fails, David spots her, and invites her inside. Tourmaline shows up (in human form) just in time to have some tea. Stone is avoidant about what’s going on, vaguely mentioning an “informant” who told her something would happen here at midnight.
 *At midnight, the lights go out, a window is smashed, and ''tear gas starts to fill the room''. Tourm, who is unaffected by the gas, tries to grab David and Stone and get them outside. In the confusion, she runs right into a group of people with gas masks and stun gun things. There are regular mook people in gas masks, and one [[super-seeming person|Clearcut]] with a sword plus stun gun, which she hits Tourmaline with. By the time Tourmaline and Stone recover, ''everyone, plus David, is gone.''
@@ -11180,7 +11200,7 @@ General to do list
 *Stone, down in the science room, rushes through to the opposite room and threatens scientists to release David from the pod. She doesn’t notice from one of the unblocked doors a short, very built ''person with a sword coming through and heading straight towards Stone.''
 </pre>
 </div>
-<div cap="A Tubular Fight" created="20210912115030898" list-after="Issue 22" modified="20210912120244399" pclist="[[The Scalding Stone]] Peregrine Millennium Tourmaline" tags="Sessions" title="Issue 23">
+<div cap="A Tubular Fight" created="20210912115030898" list-after="Issue 22" modified="20210912121531453" pclist="[[The Scalding Stone]] Peregrine Millennium Tourmaline" tags="Sessions" title="Issue 23">
 <pre>{{||IssueTemplate}}
 
 !!!!Continued science room fight time!
@@ -11204,7 +11224,7 @@ General to do list
 *Tourm tells Stone to grab Peregrine (revealing Peregrine’s hero name to anyone watching) and manages to do tech-stuff to get David out of the tube
 *''Tourm and Stone carry David and Peregrine towards an exit'' (not the way we came, a way that is likely to be less guarded). Clearcut shoots Tourm as she leaves, and she drops David on the observation deck. Clearcut is obviously set on stopping us from taking David
 *We catch a breather outside the door of the observation deck. ''Tourm offers to shapeshift to look like Stone and buy time'' for Stone to get Peregrine and David away. Tourm and Stone have a nice friendship moment where Stone promises to come back if necessary.
-*Stone, David, and Peregrine make their way out as Tourm fights Clearcut to distract them. Tourm (still disguised as Stone) is ''overpowered and placed in the one remaining tube''. Dr Olowu monologues; when [[Magenta]] were doing their [[Source|The Source]] experiments the Source-waves sent throughout the city responded weirdly to Leah and her family. ''[[Her parents|The Conrad Familly]] were involved in some sort of powers experiment before the Bug that was believed to have failed.'' [[The Minerva Institute]] picked up on the weird signals and realized the experiments succeeded. They’ve developed devices that should unlock untapped powers in Stone by linking her to the Source (which she previously wasn’t). Tourm thinks this is actually pretty interesting and lets it happen. ''Tourmaline gains her polismancy powers'', linking her to Eiffel City:
+*Stone, David, and Peregrine make their way out as Tourm fights Clearcut to distract them. Tourm (still disguised as Stone) is ''overpowered and placed in the one remaining tube''. Dr Olowu monologues; when [[Magenta]] were doing their [[Source|The Source]] experiments the Source-waves sent throughout the city responded weirdly to Leah and her family. ''[[Her parents|The Conrad Family]] were involved in some sort of powers experiment before the Bug that was believed to have failed.'' [[The Minerva Institute]] picked up on the weird signals and realized the experiments succeeded. They’ve developed devices that should unlock untapped powers in Stone by linking her to the Source (which she previously wasn’t). Tourm thinks this is actually pretty interesting and lets it happen. ''Tourmaline gains her polismancy powers'', linking her to Eiffel City:
 **Supernatural senses: The city is under your skin. You know streets you’ve never seen before. A hermetic student leaves their isolation and you feel their emptiness as they pass.
 **~~Psychic~~ City constructs: The city is malleable beneath your fingers. A doorway in a wall, a sword from cast iron railings.
 *Peregrine, Stone, and David sneak to the garage. Peregrine drives them out in a sick hovercraft
@@ -11214,14 +11234,14 @@ General to do list
 
 </pre>
 </div>
-<div cap="After the Tubes" created="20210912120306528" list-after="Issue 23" modified="20210912120949511" pclist="[[The Scalding Stone]] Peregrine Tourmaline Millennium" tags="Sessions" title="Issue 24">
+<div cap="After the Tubes" created="20210912120306528" list-after="Issue 23" modified="20210912121153525" pclist="[[The Scalding Stone]] Peregrine Tourmaline Millennium" tags="Sessions" title="Issue 24">
 <pre>{{||IssueTemplate}}
 
 *Jump back to Millennium teleporting away, to the quarry they and [[Dom]] hang out in. Dom senses Millennium freaking out and shows up. Mill explains what happens and Dom tells them they can’t avoid danger, but can prepare and be ready for it, suggests doing some powers-meditation-y stuff
 *Back on the aircraft, [[David]] starts to come to. Peregrine eavesdrops while driving, and hears Leah’s name. Stone breaks down and David comforts her. 
 *Tourm has escaped from the institute and is overwhelmed by her new powers - she flies up high to try and escape the noise. [[Merciless Concrete]] goes to her and observes that Tourm is less and less Chell
 *Stone and David go to move their family
-**Stone has a rough discussion with David about what to do. Stone’s younger siblings: [[Maggy, Nancy, Daniel|| The Conrad Family]]
+**Stone has a rough discussion with David about what to do. Stone’s younger siblings: [[Maggy, Nancy, Daniel|The Conrad Family]]
 **Stone calls Mandy to ask if she can organize somewhere safe for her family - Mandy rents a hotel suite
 **Stone and David go to their parents, mention [[The Minerva Institute]], and convince them to come with them
 **Millennium comes along to keep an eye on things and help with siblings
@@ -11292,22 +11312,22 @@ General to do list
 
 </pre>
 </div>
-<div cap="Eight Heads..." created="20210911002004925" list-after="Issue 4" modified="20210911225641082" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 5">
+<div cap="Eight Heads..." created="20210911002004925" list-after="Issue 4" modified="20210912121321910" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 5">
 <pre>{{||IssueTemplate}}
 
-The first half of the hydra fight, facing off against [[Fastrack]], [[Pollux, Castor|Pollux and Castor]], and [[Kid Slime]] as well as a holo-mechanical hydra.
+The first half of the hydra fight, facing off against [[Fasttrack]], [[Pollux, Castor|Pollux and Castor]], and [[Kid Slime]] as well as a holo-mechanical hydra.
 
 Notable events:
 
 *Tourmaline poisons Fasttrack with the poison head
 *We hit the button of winning but the simulation doesn't end.</pre>
 </div>
-<div cap="...Are Better Than One" created="20210911002339611" list-after="Issue 5" modified="20210911225812263" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 6" type="">
+<div cap="...Are Better Than One" created="20210911002339611" list-after="Issue 5" modified="20210912121332072" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 6" type="">
 <pre>{{||IssueTemplate}}
 
-The second half of that fight, facing off against [[Fastrack]], [[Pollux, Castor|Pollux and Castor]], and [[Kid Slime]] as well as a holo-mechanical hydra.
+The second half of that fight, facing off against [[Fasttrack]], [[Pollux, Castor|Pollux and Castor]], and [[Kid Slime]] as well as a holo-mechanical hydra.
 
-*Millenium accidents warps themself, Tourmaline, KB, and at least one of Fasttrack's crew to a [[post apocalyptic research hellscape|Clockmaker 'Verse]] where they see the [[Clockmaker]] before returning
+*Millenium accidents warps themself, Tourmaline, KB, and at least one of Fasttrack's crew to a [[post apocalyptic research hellscape|Clockmaker 'Verse]] where they see [[The Clockmaker]] before returning
 **Tourmaline contacts a [[Chell]] research station for help (theorised to be involved with [[The Outstretched Hand]])
 *The orb explodes when KB tries to use it
 *Everyone gets real fucked up (especially KB, Lark, and Millennium)
@@ -11364,7 +11384,7 @@ The Ingenious Cassandra, angered by Tourmaline’s punch, turns towards her, rea
 The two of them fight using very similar moves, a lot of fast teleporting and predictive magical blasts. Presumably realising the danger the two of them were causing to the onlookers, Lark decided to take the fight outside… through the skylight. Now flying above the museum Cassandras Jr. and Sr. continue their battle, visible to onlookers in brief flashes as they move around the sky in the midst of a gathering, local maelstrom. The fight continues for only a short while before The Ingenious Cassandra decides that now is not the time and retreats… for now...
 </pre>
 </div>
-<div cap="Where In The World Is Killer Byte" created="20210911231627141" list-after="Issue 7" modified="20210911232249533" pclist="Tourmaline [[The Scalding Stone]] Millennium Lark" tags="Sessions" title="Issue 8">
+<div cap="Where In The World Is Killer Byte" created="20210911231627141" list-after="Issue 7" modified="20210912121356035" pclist="Tourmaline [[The Scalding Stone]] Millennium Lark" tags="Sessions" title="Issue 8">
 <pre>{{||IssueTemplate}}
 
 *Leah &amp; [[Mandy]] have a heart to heart
@@ -11373,7 +11393,7 @@ The two of them fight using very similar moves, a lot of fast teleporting and pr
 *Lark continues her dramatic exit (walks off) &amp; [[Dom]] finds her
 *Tourmaline is pissed with Millennium
 *Millennium gets a phone call from Private Eye worried about where the fuck KB is
-*Scalding stone goes to [[Killer Bytes]] house, everyone else checks the last known location
+*Scalding stone goes to [[Killer Byte]]'s house, everyone else checks the last known location
 **Clues are found at scene
 **Group converges at KBs house to get more info and access computer
 *Tourm and Stone go to see Siobhan who apparently KB hangs with
@@ -11487,6 +11507,15 @@ and
 //
 </pre>
 </div>
+<div aka="Frankie Owl Belson" created="20210912123629040" modified="20210912123808131" player="Eric" pronouns="they/he" tags="PCs unfinished" title="Killer Byte">
+<pre>{{||PCTemplate}}</pre>
+</div>
+<div aka="Cass, Cassandra August Reyner III, August Reynolds" created="20210912122531834" modified="20210912122946336" player="Kara" pronouns="she/her" tags="PCs unfinished" title="Lark">
+<pre>{{||PCTemplate}}</pre>
+</div>
+<div aka="Jamie Winters, Bug" created="20210912123149192" modified="20210912123332877" player="Jay" pronouns="they/them" tags="PCs unfinished" title="Millennium">
+<pre>{{||PCTemplate}}</pre>
+</div>
 <div created="20210911181003706" modified="20210911181150846" tags="TableOfContents" title="PCs">
 <pre>&lt;&lt;list-links &quot;[tag[PCs]]&quot;&gt;&gt;</pre>
 </div>
@@ -11510,6 +11539,9 @@ and
 &lt;/$details&gt;
 </pre>
 </div>
+<div aka="Xander Nakamura" created="20210912123505904" modified="20210912123621263" player="Elsie" pronouns="he/him" tags="unfinished PCs" title="Peregrine">
+<pre>{{||PCTemplate}}</pre>
+</div>
 <div created="20210910212306143" modified="20210911181234131" tags="TableOfContents" title="Sessions">
 <pre>&lt;&lt;list-links &quot;[tag[Sessions]]&quot;&gt;&gt;</pre>
 </div>
@@ -11520,9 +11552,15 @@ and
 
 &lt;/div&gt;</pre>
 </div>
-<div aka="Rhyolitic Tephra" created="20210911213006569" modified="20210911225341918" player="Rhi" pronouns="she/they" tags="PCs unfinished" title="Tourmaline">
+<div aka="Leah Conrad" created="20210912123019003" modified="20210912123840489" player="Eiriol" pronouns="she/her" tags="PCs unfinished" title="The Scalding Stone">
+<pre>{{||PCTemplate}}</pre>
+</div>
+<div aka="Rhyolitic Tephra" created="20210911213006569" modified="20210912122917789" player="Rhi" pronouns="she/they" tags="PCs unfinished" title="Tourmaline">
 <pre>
 {{||PCTemplate}}</pre>
+</div>
+<div created="20210912124016338" modified="20210912124024441" title="unfinished">
+<pre>&lt;&lt;list-links &quot;[tag[unfinished]]&quot;&gt;&gt;</pre>
 </div>
 
 
