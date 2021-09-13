@@ -205,6 +205,8 @@ Error message and password prompt
 
 <li>$:/view</li>
 
+<li>cap-link</li>
+
 <li>Example PC</li>
 
 <li>ExampleTiddler</li>
@@ -10285,13 +10287,13 @@ Error message and password prompt
 <div created="20210911142759563" modified="20210911142759563" title="$:/state/advancedsearch/currentTab">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20210911142624341" modified="20210912210918855" title="$:/state/notebook-sidebar">
-<pre>no</pre>
+<div created="20210911142624341" modified="20210913223940571" title="$:/state/notebook-sidebar">
+<pre>yes</pre>
 </div>
-<div created="20210911142628250" modified="20210912210736399" title="$:/state/notebook-sidebar-section">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20210911142628250" modified="20210913224738385" title="$:/state/notebook-sidebar-section">
+<pre></pre>
 </div>
-<div created="20210911230855267" modified="20210912115039512" title="$:/state/showeditpreview">
+<div created="20210911230855267" modified="20210913102901267" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
 <div created="20210911142759563" modified="20210911142759563" title="$:/state/tab--1498284803">
@@ -10306,16 +10308,16 @@ Error message and password prompt
 <div created="20210912114342755" modified="20210912121939384" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20210911181746409" modified="20210911183102942" title="$:/state/toc/TableOfContents-PCs-1871113288">
+<div created="20210911181746409" modified="20210913224717669" title="$:/state/toc/TableOfContents-PCs-1871113288">
 <pre>open</pre>
 </div>
-<div created="20210911181747222" modified="20210911181812858" title="$:/state/toc/TableOfContents-Sessions-1871113288">
-<pre>open</pre>
+<div created="20210911181747222" modified="20210913224715822" title="$:/state/toc/TableOfContents-Sessions-1871113288">
+<pre>close</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210912205719920" list="PCTemplate" modified="20210912210918856" title="$:/StoryList">
+<div created="20210913224628057" list="[[Killer Byte]]" modified="20210913224628057" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190419181423958" modified="20210910214436809" title="$:/theme">
@@ -10752,6 +10754,19 @@ Error message and password prompt
 <div created="20210910213310065" modified="20210910213315619" title="$:/view">
 <pre>classic</pre>
 </div>
+<div cap="cap" created="20210913091503441" modified="20210913103741864" tags="$:/tags/Macro" test="success" title="cap-link">
+<pre>\define cap-link(field:cap)
+&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;&lt;currentTiddler&gt;&gt;: 
+&lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt; field=&quot;$field$&quot;/&gt;
+&lt;/$link&gt;
+\end
+
+&lt;&lt;cap-link&gt;&gt;
+&lt;&lt;cap-link field:test&gt;&gt;
+
+Produces a link to currentTiddler variable with a second caption appended, for use when listing issue titles. Variable 'field' defines the second string. Can't work out how to write a version with a title parameter that will work with manually typed issue titles and 
+the currentTiddler variable</pre>
+</div>
 <div aka="fake name, faker name" created="20210911180553051" modified="20210912122937634" player="Human" pronouns="pronouns" tags="PCs" title="Example PC">
 <pre>{{||PCTemplate}}
 
@@ -10775,12 +10790,10 @@ For nesting you need the content to be another tiddler
 
 &lt;/$details&gt;</pre>
 </div>
-<div created="20210910212100945" modified="20210912210823112" tags="" title="Home">
+<div created="20210910212100945" modified="20210913103455618" tags="" title="Home">
 <pre>Most recent session notes:
 &lt;$list filter=&quot;[tag[Sessions]] +[last[]]&quot;&gt;
-&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;&lt;currentTiddler&gt;&gt;: 
-&lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt; field=cap/&gt;
-&lt;/$link&gt;
+&lt;&lt;cap-link&gt;&gt;
 &lt;/$list&gt;
 
 
@@ -10815,7 +10828,7 @@ Tiddler tagged unfinished:
 *Fastrack, was jealous of the team and suspicious of Lark when he recognised her, and decided the team were part of a plot by [[The Ingenious Cassandra]] to infiltrate the Guild. Fastrack has used his Twitter Clout to spread rumours about the team. A lot of other sidekicks in particular, are suspicious of the team
 </pre>
 </div>
-<div cap="Pilot" created="20210910221620053" list-after="Issue 0" modified="20210911225423372" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 1">
+<div cap="Pilot" created="20210910221620053" list-after="Issue 0" modified="20210913224242857" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 1">
 <pre>{{||IssueTemplate}}
 
 *Friday afternoon, at the top of the AWA Tower, centre of Eiffel City’s electronics district, the villain [[Gremlin]] was using a strange device to control electronics and cause chaos
@@ -11059,7 +11072,7 @@ Tiddler tagged unfinished:
 ***Tourmaline gets the magic crown (hat)
 </pre>
 </div>
-<div cap="Cry Me A River" created="20210910222408992" list-after="Issue 1" modified="20210911225450863" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 2">
+<div cap="Cry Me A River" created="20210910222408992" list-after="Issue 1" modified="20210913224109253" pclist="Tourmaline [[The Scalding Stone]] Lark Millennium [[Killer Byte]]" tags="Sessions" title="Issue 2">
 <pre>{{||IssueTemplate}}
 
 *Everyone has a look at the orb:
@@ -11524,7 +11537,7 @@ and
 //
 </pre>
 </div>
-<div aka="Frankie Owl Belson" created="20210912123629040" modified="20210912131220676" player="Eric" pronouns="they/he" tags="PCs unfinished" title="Killer Byte">
+<div aka="Frankie Owl Belson" created="20210912123629040" modified="20210913224808570" player="Eric" pronouns="they/he" tags="PCs unfinished" title="Killer Byte">
 <pre>{{||PCTemplate}}</pre>
 </div>
 <div aka="Cass, Cassandra August Reyner III, August Reynolds" created="20210912122531834" modified="20210912122946336" player="Kara" pronouns="she/her" tags="PCs unfinished" title="Lark">
@@ -11536,7 +11549,7 @@ and
 <div created="20210911181003706" modified="20210911181150846" tags="TableOfContents" title="PCs">
 <pre>&lt;&lt;list-links &quot;[tag[PCs]]&quot;&gt;&gt;</pre>
 </div>
-<div aka="other, names, listed, here" created="20210911133002319" list="" modified="20210912211624632" player="Name" pronouns="(pronouns)" tags="templates" title="PCTemplate">
+<div aka="other, names, listed, here" created="20210911133002319" list="" modified="20210913103712088" player="Name" pronouns="(pronouns)" tags="templates" title="PCTemplate">
 <pre>//AKA: {{!!aka}}//
 
 {{!!pronouns}}
@@ -11547,10 +11560,7 @@ and
 
 &lt;ul&gt;
 &lt;$list filter=&quot;[tag[Sessions]] +[contains:pclist{!!title}]&quot;&gt;
-&lt;li&gt;
-&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;&lt;currentTiddler&gt;&gt;: 
-&lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt; field=cap/&gt;
-&lt;/$link&gt; &lt;/li&gt;
+&lt;li&gt; &lt;&lt;cap-link&gt;&gt; &lt;/li&gt;
 &lt;/$list&gt;
 &lt;/ul&gt;
 
@@ -11560,10 +11570,7 @@ and
 
 &lt;ul&gt;
 &lt;$list filter=&quot;[tag[Sessions]] :intersection[{!!title}backlinks[]] -[contains:pclist{!!title}]&quot;&gt;
-&lt;li&gt;
-&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;&lt;currentTiddler&gt;&gt;: 
-&lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt; field=cap/&gt;
-&lt;/$link&gt; &lt;/li&gt;
+&lt;li&gt; &lt;&lt;cap-link&gt;&gt; &lt;/li&gt;
 &lt;/$list&gt;
 &lt;/ul&gt;
 
