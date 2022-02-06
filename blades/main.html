@@ -223,9 +223,15 @@ Error message and password prompt
 
 <li>Home</li>
 
+<li>NPCs</li>
+
+<li>NPCTemplate</li>
+
 <li>PCs</li>
 
 <li>PCTemplate</li>
+
+<li>Rinata</li>
 
 <li>Session 0</li>
 
@@ -240,6 +246,8 @@ Error message and password prompt
 <li>TableOfContents</li>
 
 <li>unfinished</li>
+
+<li>Vikram Seventh</li>
 
 </ul>
 </p>
@@ -10242,11 +10250,11 @@ Error message and password prompt
 <div created="20210911142624341" modified="20211211180532726" title="$:/state/notebook-sidebar">
 <pre>yes</pre>
 </div>
-<div created="20210911142628250" modified="20220124130733328" title="$:/state/notebook-sidebar-section">
-<pre>TableOfContents</pre>
+<div created="20210911142628250" modified="20220206135501248" title="$:/state/notebook-sidebar-section">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20210911230855267" modified="20220123153702422" title="$:/state/showeditpreview">
-<pre>no</pre>
+<div created="20210911230855267" modified="20220206131404977" title="$:/state/showeditpreview">
+<pre>yes</pre>
 </div>
 <div created="20210911142759563" modified="20210911142759563" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
@@ -10275,7 +10283,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20220124130231547" list="Cicatrice" modified="20220124130710340" title="$:/StoryList">
+<div created="20220206133634576" list="[[Session 1]]" modified="20220206140514870" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190419181423958" modified="20210910214436809" title="$:/theme">
@@ -10758,7 +10766,7 @@ For nesting you need the content to be another tiddler
 
 &lt;/$details&gt;</pre>
 </div>
-<div created="20210910212100945" modified="20220110195449678" tags="" title="Home">
+<div created="20210910212100945" modified="20220206133703537" tags="" title="Home">
 <pre>Most recent session notes:
 &lt;$list filter=&quot;[tag[Sessions]] +[last[]]&quot;&gt;
 &lt;&lt;cap-link&gt;&gt;
@@ -10773,12 +10781,53 @@ You may notice there's shit other than blades there, ignore all that everything 
 General to do list
 
 *make more/better templates
-**NPCs
+**Factions
+**Better NPCs
 **Make PCs look good
 *Make all the missing tiddlers
 
 Tiddlers tagged unfinished:
 {{unfinished}}</pre>
+</div>
+<div created="20220206133754466" modified="20220206133814545" tags="TableOfContents" title="NPCs">
+<pre></pre>
+</div>
+<div affiliations="faction [[long name faction]]" aka="other, names, listed, here" brief-description="Include line of work and a brief physical description if known" created="20220206131624130" list="" modified="20220206140510310" pronouns="(pronouns)" tags="templates" title="NPCTemplate">
+<pre>//AKA: {{!!aka}}//
+
+{{!!pronouns}}
+
+Affiliated with:
+&lt;$list filter=&quot;[list[!!affiliations]sort[]] +[butlast[]]&quot;&gt;
+&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;/&gt;, 
+&lt;/$list&gt;
+&lt;$list filter=&quot;[list[!!affiliations]sort[]] +[last[]]&quot;&gt;
+&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;/&gt;
+&lt;/$list&gt;
+
+!!!Description
+{{!!brief-description}}
+
+&lt;$details summary=&quot;Featured In&quot;&gt;
+
+&lt;ul&gt;
+&lt;$list filter=&quot;[tag[Sessions]] +[contains:npcs-orgs{!!title}]&quot;&gt;
+&lt;li&gt; &lt;&lt;cap-link&gt;&gt; &lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
+
+&lt;/$details&gt;
+
+&lt;$details summary=&quot;Mentioned In&quot;&gt;
+
+&lt;ul&gt;
+&lt;$list filter=&quot;[tag[Sessions]] :intersection[{!!title}backlinks[]] -[contains:npcs-orgs{!!title}]&quot;&gt;
+&lt;li&gt; &lt;&lt;cap-link&gt;&gt; &lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
+
+&lt;/$details&gt;
+</pre>
 </div>
 <div created="20210911181003706" modified="20210911181150846" tags="TableOfContents" title="PCs">
 <pre>&lt;&lt;list-links &quot;[tag[PCs]]&quot;&gt;&gt;</pre>
@@ -10810,6 +10859,11 @@ Tiddlers tagged unfinished:
 
 &lt;/$details&gt;
 </pre>
+</div>
+<div affiliations="[[Alecto's Crows]]" aka="" brief-description="The leader of Alecto's Crows" created="20220206133839442" modified="20220206134813016" pronouns="she/her" tags="NPCs" title="Rinata">
+<pre>{{||NPCTemplate}}
+
+Offered us a job to sabotage [[The Bootleggers]] in order to aid the Crows expanding into the [[Dead Caverns]], which we took. Has some kind of scary occult painting that she doesn't let anyone else see. </pre>
 </div>
 <div cap="What Are We Haunted By?" created="20210910215846970" list-after="Example Session" modified="20211214130759989" tags="Sessions" title="Session 0">
 <pre>!{{!!cap}}
@@ -10871,20 +10925,20 @@ Reasons it’s hard to leave (also there need to be some sort of small communiti
 
 Should list primary takeaways, and a full or brief summary of gameplay</pre>
 </div>
-<div created="20220123153644762" list-after="Session 0.1" modified="20220124130621820" pclist="Crasis Haizea Magpie Cicatrice Winter" tags="Sessions" title="Session 1">
+<div cap="As The Crows Fly" created="20220123153644762" list-after="Session 0.1" modified="20220206134453653" npcs-orgs="Rinata [[Vikram Seventh]] [[Alecto's Crows]] [[The Bootleggers]]" pclist="Crasis Haizea Magpie Cicatrice Winter" tags="Sessions" title="Session 1">
 <pre>{{||SessionTemplate}}
 
 !!!Summary
 *Invited to the office of [[Alecto's Crows]] by leader [[Rinata]]
-**Deal brokered by [[Emancio]]
+**Deal brokered by [[Amancio]]
 **Just suspiciously friendly
-**In conflict with [[Bootleggers]] for control of [[Dead Caverns]]
+**In conflict with [[The Bootleggers]] for control of [[Dead Caverns]]
 **Wants us to sabotage bootleggers ghost machine [[Geistraveller]] which uses Geistarc infused wire. 
 **will give us space in caverns
 
-*Meet with bootleggers, [[Vikrim Seventh]]
+*Meet with bootleggers, [[Vikram Seventh]]
 **Rinata's very possesive and weird about a painting, Vikrim wants us to steal it
-**Calls in source [[Nyah]]
+**Calls in source [[Nahyah]]
 ***Painting of woman feeding rabbits
 ***Rinata was talking to it
 ***Nyah couldn't look away
@@ -10908,7 +10962,7 @@ Should list primary takeaways, and a full or brief summary of gameplay</pre>
 <div created="20210910212306143" list="Issue 0" modified="20210912205844585" tags="TableOfContents" title="Sessions">
 <pre>&lt;&lt;list-links &quot;[tag[Sessions]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20210911202954563" modified="20211211181136588" tags="templates" title="SessionTemplate">
+<div created="20210911202954563" modified="20220206140504185" npcs-orgs="" tags="templates" title="SessionTemplate">
 <pre>!{{!!cap}}
 //
 Starring:
@@ -10920,6 +10974,18 @@ and
 &lt;$link to=&lt;&lt;currentTiddler&gt;&gt;/&gt;
 &lt;/$list&gt;
 //
+
+&lt;$details summary=&quot;Major Players&quot;&gt;
+&lt;$list filter=&quot;[list[!!npcs-orgs]sort[]]&quot;&gt;
+&lt;p&gt;
+&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;/&gt; &lt;br&gt;
+{{!!brief-description}}
+&lt;/p&gt;
+
+&lt;/$list&gt;
+
+&lt;/$details&gt;
+
 </pre>
 </div>
 <div caption="Table Of Contents" created="20190331133032530" list-before="$:/core/ui/SideBar/Open" modified="20210910215240036" tags="$:/tags/SideBar" title="TableOfContents">
@@ -10931,6 +10997,11 @@ and
 </div>
 <div created="20220110195430872" modified="20220110195446201" tags="" title="unfinished">
 <pre>&lt;&lt;list-links &quot;[tag[unfinished]]&quot;&gt;&gt;</pre>
+</div>
+<div affiliations="[[The Bootleggers]]" aka="" brief-description="Leader of The Bootleggers. Businesslike criminal." created="20220206134913789" modified="20220206135408974" pronouns="he/him" tags="NPCs" title="Vikram Seventh">
+<pre>{{||NPCTemplate}}
+
+Offered us a job to steal [[Rinata]]'s werid occult painting to give the Bootleggers an edge on their competition for control of the [[Dead Caverns]].</pre>
 </div>
 
 
